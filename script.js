@@ -43,7 +43,7 @@ async function apiCall() {
   // Setting Map
   document.getElementById(
     "map"
-  ).src = `https://maps.google.com/maps?q=${latitude},${longitude}&output=embed" width="360" height="270" frameborder="0" style="border:0`;
+  ).src = `https://maps.google.com/maps?q=${latitude},${longitude}&output=embed`;
 
   // Post Office API
   const request_url = `https://api.postalpincode.in/pincode/${pincode}`;
