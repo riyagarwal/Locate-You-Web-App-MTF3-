@@ -29,6 +29,11 @@ async function apiCall() {
     //   console.log(latitude);
     //   console.log(longitude);
 
+    // calculating date and time
+    const dateTime = new Date().toLocaleString("en-US", {
+      timeZone: `${timeZone}`,
+    });
+
     // Rendering location details on screen
     document.getElementById("lat").innerText = `Latitude: ${latitude}`;
     document.getElementById("long").innerText = `Longitude: ${longitude}`;
@@ -36,8 +41,8 @@ async function apiCall() {
     document.getElementById("region").innerText = `Region: ${region}`;
     document.getElementById("org").innerText = `Organization: ${org}`;
     document.getElementById("timezone").innerText = `Time Zone: ${timeZone}`;
-    document.getElementById("postal").innerText = `Time Zone: ${pincode}`;
-    // document.getElementById("dateTime").innerText = `Time Zone: ${}`;
+    document.getElementById("dateTime").innerText = `Date & Time: ${dateTime}`;
+    document.getElementById("postal").innerText = `Pin Code: ${pincode}`;
 
     // Setting Map
     document.getElementById(
@@ -62,7 +67,6 @@ function createPostOfficeUI(postalData) {
   const numOfPostOffice = postalData[0].PostOffice.length;
 
   for (let i = 0; i < numOfPostOffice; i++) {
-
     // Reading values
     const name = postalData[0].PostOffice[i].Name;
     const branchType = postalData[0].PostOffice[i].BranchType;
