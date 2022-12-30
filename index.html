@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>My Public IP Address</h2>
+    <p id="ip"></p>
+    <button onclick="apiCall()" id="btn">Get Data</button>
+
+    <div id="page2">
+      <p id="lat"></p>
+      <p id="long"></p>
+      <p id="city"></p>
+      <p id="region"></p>
+      <p id="org"></p>
+      <p id="timezone"></p>
+      <p id="postal"></p>
+      <p id="dateTime"></p>
+      <iframe frameborder="0" id="map"></iframe>
+
+      <p id="noOfPincode"></p>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
