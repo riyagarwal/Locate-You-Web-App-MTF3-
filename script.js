@@ -70,9 +70,9 @@ function createPostOfficeUI(postalData) {
     const district = postalData[0].PostOffice[i].District;
     const division = postalData[0].PostOffice[i].Division;
 
-    const box = document.createElement("div");
-    box.className = "box";
-    document.getElementById("postalData").appendChild(box);
+    const boxElement = document.createElement("div");
+    boxElement.className = "box";
+    document.getElementById("postalData").appendChild(boxElement);
 
     // Creating elements
     const nameElement = document.createElement("p");
@@ -89,11 +89,11 @@ function createPostOfficeUI(postalData) {
     divisionElement.textContent = `Division: ${division}`;
 
     // Appending them to the box
-    box.appendChild(nameElement);
-    box.appendChild(branchElement);
-    box.appendChild(deliveryElement);
-    box.appendChild(districtElement);
-    box.appendChild(divisionElement);
+    boxElement.appendChild(nameElement);
+    boxElement.appendChild(branchElement);
+    boxElement.appendChild(deliveryElement);
+    boxElement.appendChild(districtElement);
+    boxElement.appendChild(divisionElement);
   }
 }
 

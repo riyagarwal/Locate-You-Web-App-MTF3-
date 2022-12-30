@@ -1,12 +1,40 @@
-#page2{
-    display: none;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display&family=Poppins&display=swap");
+
+body {
+  background-color: black;
+  color: wheat;
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 500;
 }
 
-.postalData{
-    display: grid;
-    grid-template-columns: 300px 300px;
+button {
+  background-color: whitesmoke;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#page2 {
+  display: none;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.postalData {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .box {
-    border: 1px solid black;
+  border: 1px solid white;
+  margin: 20px 0;
+  padding: 20px;
+  width: 25%;
 }
